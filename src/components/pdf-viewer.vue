@@ -177,39 +177,7 @@
               >
             </button>
 
-            <button
-              v-show="showElem('secondaryToolbar.secondaryOpenFile')"
-              @click.once="bindOpenHandler"
-              id="secondaryOpenFile"
-              class="secondaryToolbarButton openFile visibleLargeView vue-pdf-app-icon open-file"
-              title="Open File"
-              tabindex="52"
-              data-l10n-id="open_file"
-            >
-              <span data-l10n-id="open_file_label">Open</span>
-            </button>
-
-            <button
-              v-show="showElem('secondaryToolbar.secondaryPrint')"
-              id="secondaryPrint"
-              class="secondaryToolbarButton print visibleMediumView vue-pdf-app-icon print-button"
-              title="Print"
-              tabindex="53"
-              data-l10n-id="print"
-            >
-              <span data-l10n-id="print_label">Print</span>
-            </button>
-
-            <button
-              v-show="showElem('secondaryToolbar.secondaryDownload')"
-              id="secondaryDownload"
-              class="secondaryToolbarButton download visibleMediumView vue-pdf-app-icon download-button"
-              title="Download"
-              tabindex="54"
-              data-l10n-id="download"
-            >
-              <span data-l10n-id="download_label">Download</span>
-            </button>
+            
 
             <a
               v-show="showElem('secondaryToolbar.secondaryViewBookmark')"
@@ -577,43 +545,8 @@
                   >
                 </button>
 
-                <button
-                  v-show="
-                    showElem('toolbar.toolbarViewerRight.openFile', 'openFile')
-                  "
-                  @click.once="bindOpenHandler"
-                  id="openFile"
-                  class="toolbarButton openFile hiddenLargeView vue-pdf-app-icon open-file"
-                  title="Open File"
-                  tabindex="32"
-                  data-l10n-id="open_file"
-                >
-                  <span data-l10n-id="open_file_label">Open</span>
-                </button>
-
-                <button
-                  v-show="showElem('toolbar.toolbarViewerRight.print', 'print')"
-                  id="print"
-                  class="toolbarButton print hiddenMediumView vue-pdf-app-icon print-button"
-                  title="Print"
-                  tabindex="33"
-                  data-l10n-id="print"
-                >
-                  <span data-l10n-id="print_label">Print</span>
-                </button>
-
-                <button
-                  v-show="
-                    showElem('toolbar.toolbarViewerRight.download', 'download')
-                  "
-                  id="download"
-                  class="toolbarButton download hiddenMediumView vue-pdf-app-icon download-button"
-                  title="Download"
-                  tabindex="34"
-                  data-l10n-id="download"
-                >
-                  <span data-l10n-id="download_label">Download</span>
-                </button>
+          
+          
                 <a
                   v-show="
                     showElem(
